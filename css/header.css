@@ -1,0 +1,117 @@
+header {
+  top: 20px;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  animation-name: down;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+@keyframes down{
+  0%{
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+header .wrap {
+  background-color: white;
+  box-sizing: border-box;
+  padding: 0px 50px;
+  max-width: 1722px;
+  font-weight: bold;
+  position: relative;
+  animation-name: wide;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes wide{
+  100%{
+    width: 100%;
+  }
+}
+header .wrap nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+header .wrap nav h1 {
+  font-weight: 400;
+}
+header .wrap nav h1 a {
+  display: flex;
+  font-size: 15px;
+  align-items: end;
+  color: #17A0D6;
+  gap: 7px;
+  font-weight: bold;
+}
+header .wrap nav h1 a span {
+  background-image: url(../img/logo.png);
+  width: 32px;
+  height: 17px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-size: 0;
+}
+header .wrap nav .gnb {
+}
+header .wrap nav .gnb li {
+}
+header .wrap nav .gnb li a {
+  padding: 0px 30px;
+  line-height: 5;
+  display: block;
+  border-top: 2px solid transparent;
+}
+header .wrap nav .gnb li a:hover{
+  color: #119AD6;
+}
+header .wrap nav > div:nth-of-type(1) {
+  align-items: center;
+  gap: 20px;
+  font-size: 13px;
+}
+header .wrap nav div.flex .lang {
+  font-family: 'Titillium Web', sans-serif;
+}
+header .wrap nav div.flex .lang li {  
+}
+header .wrap nav div.flex .lang li a {  
+  padding: 0 10px;
+  display: block;
+  position: relative;
+  font-size: 11px;
+}
+header .wrap nav div.flex .lang li a:hover{
+  color: skyblue;
+}
+header .wrap nav div.flex .lang li:nth-child(1) a::after,header .wrap nav div.flex .lang li:nth-child(2) a::after{
+ content: "";
+ border-right: 1px solid #ccc;
+ height: 8px;
+ display: inline-block;
+ position: absolute;
+ right: 0;
+ top: calc(50% - 3px);
+}
+header .wrap nav div.flex .search {
+  
+
+}
+header .wrap nav div.flex .search button {
+  background-image: url(../img/search.svg);
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-size: 0px;
+  border: none;
+  background-color: transparent;
+}
